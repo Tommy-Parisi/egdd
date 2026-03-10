@@ -56,9 +56,9 @@ Replace this with a one sentence pitch for your game. Pretend that your were pit
 
 ## Assessment Measures
 
-*Describe how the learning could be assessed, e.g., pre/post multiple-choice test, or SAT, or some other instrument.*
+*Clearly identify a set of viable assessment questions AND their grading logic. The questions should be specific examples of the kinds of questions that your game could conceivably improve student performance on. For the grading logic, it could be the correct answer, a rubric for evaluating the answer, or exact logic for deriving answers.*
 
-*If proposing a new instrument, briefly and concisely list several example assessment questions.*
+
 
 # What sets this project apart?
 
