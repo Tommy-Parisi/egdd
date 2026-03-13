@@ -4,8 +4,6 @@
 
 ## Elevator Pitch
 
-Replace this with a one sentence pitch for your game. Pretend that your were pitching your game to a executive going to the elevator, and you only had 60 seconds. You should not write more than a few sentences at most. Check [this resource](http://www.gameacademy.com/perfecting-indie-games-elevator-pitch/) for more information.
-
 In Case By Case, 
 
 you play the role of the defense attourney, presenting evidence to keep the on-trial function out of jail. 
@@ -17,26 +15,29 @@ you play the role of the prosecutor, presenting evidence to put the on-trial fun
 Choose your evidence carefully, craft your case, because the jury wont be easily convinced. Players learn to spot edge cases, evaluate coverage, and think about tests in a high stakes environment. 
 
 
-## Influences (Brief)
+## Influences
 
-- *Influence #1*:
-  - Medium: *(Television, Games, Literature, Movies, etc.)*
-  - Explanation: *In one paragraph or less, explain why this is an influence.*
-- *Influence #2*:
-  - Medium: *(Television, Games, Literature, Movies, etc.)*
-  - Explanation: *In one paragraph or less, explain why this is an influence.*
+- The American Judicial System
+  - Medium: Trial Recordings, Court TV, "True Crime" Court Case Explainations  
+  - Explanation: Case By Case is set in a court room and the regular rules of this domain apply. Trials, juries, evidence, the defence and prosecution
+- *Influence #2*: Jackbox Games
+  - Medium: Games
+  - Explanation: The visual style and and game flow of Jackbox games inspires my thinking about Case by Case. The player will have to pick between test cases on the screen and we need to make this fun and visually appealing. Smitty-style narration and quips, funky music, cool animations, and a fun court house design inspired by Jackbox.TV. 
 - *Influence #3*:
   - Medium: *(Television, Games, Literature, Movies, etc.)*
   - Explanation: *In one paragraph or less, explain why this is an influence.*
+- *Influence #4*:
+  - Medium: *(Television, Games, Literature, Movies, etc.)*
+  - Explanation: *In one paragraph or less, explain why this is an influence.*
 
-## Core Gameplay Mechanics (Brief)
+## Core Gameplay Mechanics 
 
 *Give a very high-level description of any core gameplay mechanics*
 
 - Players evaluate small program functions by selecting a limited number of test cases from a larger pool.
 - Each selected test case is treated as evidence about function behavior.
 - Players must decide which evidence is most meaningful.
-- The game issues confidence-based verdicts instead of simple pass/fail outcomes.
+- The game issues confidence-based verdicts. 
 
 # Learning Aspects
 
@@ -44,11 +45,14 @@ Choose your evidence carefully, craft your case, because the jury wont be easily
 
 *Briefly list any and all of the disciplines and learning domains for this subject.*
 
-Test evaluation and confidence-based reasoning about program behavior.
+Test evaluation and reasoning about program behavior.
 
 ## Target Audiences
 
-*Who are your learners?*
+Computer Science Students: intro to intermediate level
+- Students learning to write unit tests for the first time who dont fully understand *why* or *which* tests matter.
+
+Engineering Educators: not players themselves but buyers for their curriculum. This game is a good fit for a QA or Intro to CS course. 
 
 ## Target Contexts
 
@@ -72,8 +76,6 @@ Test evaluation and confidence-based reasoning about program behavior.
 ## Assessment Measures
 
 *Clearly identify a set of viable assessment questions AND their grading logic. The questions should be specific examples of the kinds of questions that your game could conceivably improve student performance on. For the grading logic, it could be the correct answer, a rubric for evaluating the answer, or exact logic for deriving answers.*
-
-
 
 # What sets this project apart?
 
