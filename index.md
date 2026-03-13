@@ -1,8 +1,21 @@
 # REPLACE THIS WITH YOUR GAME NAME
 
+# Case by Case
+
 ## Elevator Pitch
 
 Replace this with a one sentence pitch for your game. Pretend that your were pitching your game to a executive going to the elevator, and you only had 60 seconds. You should not write more than a few sentences at most. Check [this resource](http://www.gameacademy.com/perfecting-indie-games-elevator-pitch/) for more information.
+
+In Case By Case, 
+
+you play the role of the defense attourney, presenting evidence to keep the on-trial function out of jail. 
+
+you play the role of the prosecutor, presenting evidence to put the on-trial function in jail. 
+
+--(not sure how we handle this, depending if the function is bad or good we would play a different role? will the player choose? need your thoughts on this)--
+
+Choose your evidence carefully, craft your case, because the jury wont be easily convinced. Players learn to spot edge cases, evaluate coverage, and think about tests in a high stakes environment. 
+
 
 ## Influences (Brief)
 
@@ -20,16 +33,18 @@ Replace this with a one sentence pitch for your game. Pretend that your were pit
 
 *Give a very high-level description of any core gameplay mechanics*
 
-- *Gameplay Mechanic #1*
-- *Gameplay Mechanic #2*
-- *Gameplay Mechanic #3*
-- *Gameplay Mechanic #4*
+- Players evaluate small program functions by selecting a limited number of test cases from a larger pool.
+- Each selected test case is treated as evidence about function behavior.
+- Players must decide which evidence is most meaningful.
+- The game issues confidence-based verdicts instead of simple pass/fail outcomes.
 
 # Learning Aspects
 
 ## Learning Domains
 
 *Briefly list any and all of the disciplines and learning domains for this subject.*
+
+Test evaluation and confidence-based reasoning about program behavior.
 
 ## Target Audiences
 
@@ -43,9 +58,9 @@ Replace this with a one sentence pitch for your game. Pretend that your were pit
 
 *Remember, Learning Objectives are NOT simply topics. They are statements of observable behavior that a learner can do after the learning experience. You cannot observe someone "understanding" or "knowing" something.*
 
-- *Short Name*: *Formal Learning Objective #1*
-- *Short Name*: *Formal Learning Objective #2*
-- *Short Name*: *Formal Learning Objective #3*
+- *Test Case Evaluation*: Evaluate the quality of selected test cases as evidence.
+- *Coverage Reasoning*: Recognize when test coverage is insufficient for a strong verdict.
+- *Edge Case Reasoning*: Reason about edge cases when assessing function behavior.
 
 ## Prerequisite Knowledge
 
@@ -64,11 +79,9 @@ Replace this with a one sentence pitch for your game. Pretend that your were pit
 
 *Give some reasons why this game is not like every other game out there. Whether the learning objective is unique, the gameplay mechanics are new, or what. You should persuade the reader that your game is novel and worthy of development. Consider arguments that would be persuasive to a Venture Capitalist, Teacher, or Researcher. These might be focused on learning needs, too.*
 
-- *Reason #1*
-- *Reason #2*
-- *Reason #3*
-- *Reason #4*
-- *etc.*
+- Confidence in function behavior depends on selected evidence quality.
+- Functions can appear correct but still lack enough evidence for a strong verdict.
+- Functions can appear broken due to misleading or flawed test cases.
 
 # Player Interaction Patterns and Modes
 
@@ -87,24 +100,44 @@ Replace this with a one sentence pitch for your game. Pretend that your were pit
 # Gameplay Objectives
 
 - *Primary Objective #1*:
-    - Description: *Description*
-    - Alignment: *Describe how this aligns with one or more learning objectives*
+  - Description: *Description*
+  - Alignment: *Describe how this aligns with one or more learning objectives*
 - *Primary Objective #2*:
-    - Description: *Description*
-    - Alignment: *Describe how this aligns with one or more learning objectives*
+  - Description: *Description*
+  - Alignment: *Describe how this aligns with one or more learning objectives*
 - *etc.*
+
+- *Primary Objective #1*:
+  - Description: Select meaningful test-case evidence from a larger pool.
+  - Alignment: Evaluate the quality of selected test cases as evidence.
+- *Primary Objective #2*:
+  - Description: Build confidence-based verdicts about function behavior.
+  - Alignment: Recognize when test coverage is insufficient for a strong verdict.
+- *Primary Objective #3*:
+  - Description: Improve reasoning about test quality, coverage, and edge cases.
+  - Alignment: Reason about edge cases when assessing function behavior.
 
 # Procedures/Actions
 
 *Describe the control scheme and what actions a user can take in the game.*
 
+Players select a limited number of test cases from a larger pool to evaluate each function.
+
 # Rules
 
 *What resources are available to the player that they make use of?  How does this affect gameplay? How are these resources finite?*
 
-# Objects/Entities
+- Players cannot submit every test case.
+- Each selected test case acts as evidence for the function on trial.
+- Verdict strength depends on the quality of chosen evidence.
 
+# Objects/Entities
 *What other things are in the world that you need to design? These may or may not directly translate to actual objects and classes.*
+- Small program functions.
+- A pool of available test cases.
+- Selected test cases as evidence.
+- Confidence-based verdicts.
+- Jury of decision makers
 
 ## Core Gameplay Mechanics (Detailed)
 
@@ -112,12 +145,21 @@ Replace this with a one sentence pitch for your game. Pretend that your were pit
 - *Core Gameplay Mechanic #2*: *Describe in 2 paragraphs or less, along with how it generally works*
 - *Core Gameplay Mechanic #3*: *Describe in 2 paragraphs or less, along with how it generally works*
 
+- *Core Gameplay Mechanic #1*: Each function is presented as being "on trial." Players choose only a limited subset of test cases as evidence.
+- *Core Gameplay Mechanic #2*: Confidence in behavior is based on evidence quality, not proof of correctness. Outcomes are confidence-based verdicts rather than binary pass/fail.
+- *Core Gameplay Mechanic #3*: Players learn through identifying strong, weak, misleading, and insufficient evidence.
+
     
 ## Feedback
 
 *Explicitly describe what visual/audio/animation indicators there are that give players feedback on their progress towards their gameplay objectives (and ideally the learning objectives).*
 
 *Describe what longer-term feedback you detect and give that guides the player in their learning and lets them know how they are doing in regards to the learning objectives.*
+
+- Verdicts reflect confidence based on selected evidence.
+- Stronger evidence supports stronger confidence in behavior.
+- Misleading or flawed evidence can produce weak or incorrect conclusions.
+- A Jury will decide at the end of the trial whether or not the function is GUILTY, the jury needs a majority to convict and the amount of jurors voting either way will be displayed. (confidence-based verdict)
 
 # Story and Gameplay
 
@@ -132,6 +174,12 @@ Replace this with a one sentence pitch for your game. Pretend that your were pit
 ## Story (Brief)
 
 *The Summary or TL;DR version of below*
+
+Functions are framed as being "on trial," and players present test-case evidence to support confidence-based verdicts.
+
+"ALL RISE FOR THE HONORABLE JUDGE CASE"
+
+The gavel slams as the clock strikes 8:00 AM. Judge Case has many a trial to attend to and YOU must provide evidence to prove the GUILT or INNOCENCE of the on-trial functions.
 
 ## Storyboarding
 
