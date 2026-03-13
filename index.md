@@ -99,6 +99,22 @@ Engineering Educators: not players themselves but buyers for their curriculum. T
 - *Player mode #2*: *Description*
 - *etc.*
 
+- Title Screen: CASE BY CASE title screen with buttons: {Play} {Settings}, {}, {}
+- Player picks {Play}: Court room doors open and we zoom up to the stand, a function sits at the defendant table, Judge Case sits atop the bench, jury is visible on one side.
+- Main Game Loop: There exist test cases visible that we must sift through and pick a few as evidence. Exhibit A, Exhibit B, ... Exhibit N. The test cases are then applied to the function, (this is where I dont really know what happens)
+- Jury Deliberation: breif time for the jury to deliberate over the evidence, im picturing sillutttes talking to eachother behind some wall or curtain, maybe showing each piece of evidence and their thoughts  
+- Verdict: Jury comes back, some say guilty and others say innocent, majority rules. 
+
+The jury's decision will be difficult to implement, they have to make decisions based on the function as well as the evidence. 
+
+IF the function is correct or well written:
+- but the evidence was poor: we may get a false imprisionment and the player will be disbarred or something. 
+- and the evidence is solid: the function is innocent (yay)
+
+IF the function is poorly written and full of bugs or errors:
+- and the evidence is poor: the function may be declared innocent because edge cases or bugs were missed by the cases, this function is then out on the streets to one day reoffend and crash someones server
+- and the evidence is solid: the function is found guilty and put in jail (yay)
+
 # Gameplay Objectives
 
 - *Primary Objective #1*:
