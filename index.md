@@ -334,14 +334,13 @@ The aesthetic should resemble a playful digital courtroom with programming-theme
 
 ## Audio 
 
-- Intro music: https://freesound.org/people/Rootsmessenger/sounds/762073/
+- Intro music: https://freesound.org/people/Rootsmessenger/sounds/762073/ 
 - Mouse clicking sound: https://freesound.org/people/inkedflorist/sounds/710039/
 - Dragging case statements sound: https://freesound.org/people/Garuda1982/sounds/564632/
-- Gavel sound when pressing "guilty" or "not guilty": https://freesound.org/people/TurtleLG/sounds/80448/
-- Code being sent to jail (guilty) sound: TBD
-- Judge explaining verdict sound: https://freesound.org/people/so0rec/sounds/542590/ lol nice
-- End game celebration sound: https://freesound.org/people/imagefilm.berlin/sounds/746442/
-- Code is innocent sound: TBD
+- Gavel sound when pressing ‘guilty’ or ‘not guilty’ button: https://freesound.org/people/TurtleLG/sounds/80448/
+- Code being sent to jail (guilty) sound: https://freesound.org/people/jacobmathiassen/sounds/254869/ 
+- Judge explaining verdict sound: https://freesound.org/people/so0rec/sounds/542590/ 
+- End game celebration sound: https://freesound.org/people/imagefilm.berlin/sounds/746442/ 
 
 ## Storyboarding
 
