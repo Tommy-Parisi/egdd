@@ -51,6 +51,7 @@ Logic
 ## Target Audiences
 
 * Novice programmers with some programming knowledge
+* Novice programmers that have a basic understanding of Python
 * Students who are in introductory programming or software engineering courses
 * Students who are beginning to understand how to write and evaluate unit tests 
 
