@@ -332,7 +332,7 @@ The aesthetic should resemble a playful digital courtroom with programming-theme
 - Environment:
   - Stylized courtroom background with programming-themed visuals.
 
-## Audio (TBD)
+## Audio 
 
 - Intro music: https://freesound.org/people/Rootsmessenger/sounds/762073/
 - Mouse clicking sound: https://freesound.org/people/inkedflorist/sounds/710039/
@@ -343,3 +343,20 @@ The aesthetic should resemble a playful digital courtroom with programming-theme
 - End game celebration sound: https://freesound.org/people/imagefilm.berlin/sounds/746442/
 - Code is innocent sound: TBD
 
+## Storyboarding
+
+![Storyboard Page 1](Page1.png)
+
+![Storyboard Page 2](Page2.png)
+
+![Storyboard Page 3](Page3.png)
+
+![Storyboard Page 4](Page4.png)
+
+![Storyboard Page 5](Page5.png)
+
+![Storyboard Page 6](Page6.png)
+
+![Storyboard Page 7](Page7.png)
+
+![Storyboard Page 8](Page8.png)
