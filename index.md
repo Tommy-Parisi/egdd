@@ -9,12 +9,12 @@ In Case By Case, players take the role of a software attorney tasked with determ
 ## Influences
 
 The American Judicial System
-  Medium: Trial Recordings, Court TV, "True Crime" Court Case Explanations 
-  Explanation: Case By Case is set in a court room and the regular rules of this domain apply. Trials, juries, evidence, the defence and prosecution
+- Medium: Trial Recordings, Court TV, "True Crime" Court Case Explanations 
+- Explanation: Case By Case is set in a court room and the regular rules of this domain apply. Trials, juries, evidence, the defence and prosecution
 
 Jackbox Games
-  Medium: Game
-  Explanation: The visual style and game flow of Jackbox games inspires my thinking about Case by Case. The player will have to pick between test cases on the screen and we need to make this fun and visually appealing. funky music, cool animations, and a fun court house design inspired by Jackbox.TV.
+- Medium: Game
+- Explanation: The visual style and game flow of Jackbox games inspires my thinking about Case by Case. The player will have to pick between test cases on the screen and we need to make this fun and visually appealing. funky music, cool animations, and a fun court house design inspired by Jackbox.TV.
 
 
 ## Core Gameplay Mechanics
