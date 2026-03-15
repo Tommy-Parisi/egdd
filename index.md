@@ -1,247 +1,345 @@
-# REPLACE THIS WITH YOUR GAME NAME
+# Case By Case
 
-# Case by Case
+# Overview
 
 ## Elevator Pitch
 
-In Case By Case, 
-
-you play the role of the defense attourney, presenting evidence to keep the on-trial function out of jail. 
-
-you play the role of the prosecutor, presenting evidence to put the on-trial function in jail. 
-
---(not sure how we handle this, depending if the function is bad or good we would play a different role? will the player choose? need your thoughts on this)--
-
-Choose your evidence carefully, craft your case, because the jury wont be easily convinced. Players learn to spot edge cases, evaluate coverage, and think about tests in a high stakes environment. 
-
+In Case By Case, players take the role of a software attorney tasked with determining whether a function is guilty of incorrect behavior. Each round presents a case stating what the function claims to do with a collection of unit tests that act as courtroom evidence. Players must select which tests meaningfully demonstrate the function’s correctness or expose its flaws.
 
 ## Influences
 
-- The American Judicial System
-  - Medium: Trial Recordings, Court TV, "True Crime" Court Case Explainations  
-  - Explanation: Case By Case is set in a court room and the regular rules of this domain apply. Trials, juries, evidence, the defence and prosecution
-- *Influence #2*: Jackbox Games
-  - Medium: Games
-  - Explanation: The visual style and and game flow of Jackbox games inspires my thinking about Case by Case. The player will have to pick between test cases on the screen and we need to make this fun and visually appealing. Smitty-style narration and quips, funky music, cool animations, and a fun court house design inspired by Jackbox.TV. 
-- *Influence #3*:
-  - Medium: *(Television, Games, Literature, Movies, etc.)*
-  - Explanation: *In one paragraph or less, explain why this is an influence.*
-- *Influence #4*:
-  - Medium: *(Television, Games, Literature, Movies, etc.)*
-  - Explanation: *In one paragraph or less, explain why this is an influence.*
+The American Judicial System
+  Medium: Trial Recordings, Court TV, "True Crime" Court Case Explanations 
+  Explanation: Case By Case is set in a court room and the regular rules of this domain apply. Trials, juries, evidence, the defence and prosecution
 
-## Core Gameplay Mechanics 
+Jackbox Games
+  Medium: Game
+  Explanation: The visual style and game flow of Jackbox games inspires my thinking about Case by Case. The player will have to pick between test cases on the screen and we need to make this fun and visually appealing. funky music, cool animations, and a fun court house design inspired by Jackbox.TV.
 
-*Give a very high-level description of any core gameplay mechanics*
 
-- Players evaluate small program functions by selecting a limited number of test cases from a larger pool.
-- Each selected test case is treated as evidence about function behavior.
-- Players must decide which evidence is most meaningful.
-- The game issues confidence-based verdicts. 
+## Core Gameplay Mechanics
+
+- The Player is introduced to a judge referred to as ‘The Honorable Judge Compiler’
+- The courtroom jury is represented by different programming languages observing the case
+- The player enters a new trial
+- A function appears on the screen with a short description of its intended behavior
+- Several unit tests appear as evidence cards
+- The player selects tests that best support a verdict
+- The court reveals the correct outcome and explains which test cases expose the bug or which test cases were redundant
+- The next case begins
+- As the game progresses, players must begin constructing their own test cases using provided inputs instead of simply selecting from a list
+- in earlier levels, the test cases will show if they are passing/failing but as the complexity increases, the player will have to figure this out themselves 
+- After completing all cases, the game displays a victory message
 
 # Learning Aspects
 
 ## Learning Domains
 
-*Briefly list any and all of the disciplines and learning domains for this subject.*
+Computer Science / Software Engineering
+  - Unit testing and test design
+  - Code coverage and redundancy
+  - Edge case detection and reasoning
+  - Debugging
+  - Reading and interpreting function behavior 
+  - Reading and interpreting test behavior 
 
-Test evaluation and reasoning about program behavior.
+Logic
+  - Identifying what is and isn't proven by available information
+  - Evidence evaluation and selection
+
 
 ## Target Audiences
 
-Computer Science Students: intro to intermediate level
-- Students learning to write unit tests for the first time who dont fully understand *why* or *which* tests matter.
-
-Engineering Educators: not players themselves but buyers for their curriculum. This game is a good fit for a QA or Intro to CS course. 
+* Novice programmers with some programming knowledge
+* Students who are in introductory programming or software engineering courses
+* Students who are beginning to understand how to write and evaluate unit tests 
 
 ## Target Contexts
 
-*Describe what kinds of formal and informal learning contexts this will be used in (e.g., courses, k-12 computer labs during free time).*
+* This game is designed to be assigned as supplementary practice in a programming or software engineering course.
+* It can be played individually outside of class as a learning activity.
+* Because it relies on visual feedback and explanations, it may be best suited for personal devices rather than in-class lecture settings.
 
 ## Learning Objectives
 
-*Remember, Learning Objectives are NOT simply topics. They are statements of observable behavior that a learner can do after the learning experience. You cannot observe someone "understanding" or "knowing" something.*
+- By the end of the lesson, players will be able to evaluate the quality of unit tests by identifying which tests meaningfully verify a function’s behavior.
+- By the end of the lesson, players will be able to identify redundant unit tests that provide no additional information about program correctness.
+- By the end of the lesson, players will be able to recognize missing edge cases that reduce confidence in a test suite.
+- By the end of the lesson, players will be able to use test results to determine whether or not a function behaves according to what it claims to be able to do.
 
-- *Test Case Evaluation*: Evaluate the quality of selected test cases as evidence.
-- *Coverage Reasoning*: Recognize when test coverage is insufficient for a strong verdict.
-- *Edge Case Reasoning*: Reason about edge cases when assessing function behavior.
+## Prerequisite Knowledge 
 
-## Prerequisite Knowledge
-
-*What do they need to know prior to trying this game?*
-
-- *Prerequisite Learning Objective #1*
-- *Prerequisite Learning Objective #2*
+Prior to the game, players need to have a basic understanding of:
+-  programming concepts such as variables, functions, return values, conditional statements and loops.
+- basic programming syntax 
+- ability to read and trace through a short function and predict its output
+- familiarity with at least 1 programming language at a beginner level
+- unit tests and verifying program behavior
+- the ability to read a unit test and identify what it is asserting 
+- the awareness that tests can pass or fail based on function behavior 
 
 ## Assessment Measures
 
-*Clearly identify a set of viable assessment questions AND their grading logic. The questions should be specific examples of the kinds of questions that your game could conceivably improve student performance on. For the grading logic, it could be the correct answer, a rubric for evaluating the answer, or exact logic for deriving answers.*
+A short pre-test and matching post-test should be designed to assess student learning.
 
-# What sets this project apart?
+### Q1: Given a function and a set of unit tests, identify which tests provide unique behavioral coverage.
 
-*Give some reasons why this game is not like every other game out there. Whether the learning objective is unique, the gameplay mechanics are new, or what. You should persuade the reader that your game is novel and worthy of development. Consider arguments that would be persuasive to a Venture Capitalist, Teacher, or Researcher. These might be focused on learning needs, too.*
+(Multiple choice)
 
-- Confidence in function behavior depends on selected evidence quality.
-- Functions can appear correct but still lack enough evidence for a strong verdict.
-- Functions can appear broken due to misleading or flawed test cases.
+~~~python
+def absolute_value(n):
+  if n < 0:
+    return -n
+  return n
+~~~
 
-# Player Interaction Patterns and Modes
+A. absolute_value(5) -> expected: 5  
+B. absolute_value(-3) -> expected: 3  
+C. absolute_value(10) -> expected: 10  
+D. absolute_value(-7) -> expected: 7  
+E. absolute_value(0) -> expected: 0
 
-## Player Interaction Pattern
+Answer: A, B, E
 
-*Describe how people play your game, how many players are involved at once, how they interact with the system works, etc.*
+Grading logic:
+- A covers the positive branch (n >= 0, returns n)
+- B covers the negative branch (n < 0, returns -n)
+- E covers the zero edge case (worth testing explicitly)
+- C is redundant with A (same branch, no new information)
+- D is redundant with B (same branch, no new information)
 
-## Player Modes
+### Q2: Identify the redundant tests that execute the same logical branch in the given function.
 
-*Your game has one or more player modes. Describe each discrete mode, considering things like menus too. Generally describe the transitions between modes too.*
+(Multiple choice)
 
-- *Player mode #1*: *Description*
-- *Player mode #2*: *Description*
-- *etc.*
+~~~python
+def classify_score(score):
+  if score >= 90:
+    return "A"
+  elif score >= 80:
+    return "B"
+  elif score >= 70:
+    return "C"
+  else:
+    return "F"
+~~~
 
-- Title Screen: CASE BY CASE title screen with buttons: {Play} {Settings}, {}, {}
-- Player picks {Play}: Court room doors open and we zoom up to the stand, a function sits at the defendant table, Judge Case sits atop the bench, jury is visible on one side.
-- Main Game Loop: There exist test cases visible that we must sift through and pick a few as evidence. Exhibit A, Exhibit B, ... Exhibit N. The test cases are then applied to the function, (this is where I dont really know what happens)
-- Jury Deliberation: breif time for the jury to deliberate over the evidence, im picturing sillutttes talking to eachother behind some wall or curtain, maybe showing each piece of evidence and their thoughts  
-- Verdict: Jury comes back, some say guilty and others say innocent, majority rules. 
+A. classify_score(95) -> expected: "A"  
+B. classify_score(85) -> expected: "B"  
+C. classify_score(92) -> expected: "A"  
+D. classify_score(72) -> expected: "C"  
+E. classify_score(78) -> expected: "C"
 
-The jury's decision will be difficult to implement, they have to make decisions based on the function as well as the evidence. 
+Answer: C, E
 
-IF the function is correct or well written:
-- but the evidence was poor: we may get a false imprisionment and the player will be disbarred or something. 
-- and the evidence is solid: the function is innocent (yay)
+Grading logic:
+- A and C both enter the score >= 90 branch, so C is redundant with A
+- B covers the score >= 80 branch uniquely
+- D and E both enter the score >= 70 branch, so E is redundant with D
 
-IF the function is poorly written and full of bugs or errors:
-- and the evidence is poor: the function may be declared innocent because edge cases or bugs were missed by the cases, this function is then out on the streets to one day reoffend and crash someones server
-- and the evidence is solid: the function is found guilty and put in jail (yay)
+### Q4: Identify an edge case that is not covered by an existing test suite.
+
+(Multiple choice / free response)
+
+~~~python
+def safe_divide(a, b):
+  if b == 0:
+    return None
+  return a / b
+~~~
+
+The following tests exist for this function:
+
+A. safe_divide(10, 2) -> expected: 5.0  
+B. safe_divide(9, 3) -> expected: 3.0  
+C. safe_divide(0, 5) -> expected: 0.0
+
+Free response: Describe one edge case that is not covered by the existing tests. Explain why it is worth testing.
+
+Rubric:
+
+| Score | Criteria |
+| --- | --- |
+| Full Credit | Identifies b = 0 as uncovered and explains that it triggers a special-case branch |
+| Partial Credit | Identifies b = 0 without explanation, or identifies another minor valid edge case with reasonable explanation |
+| No Credit | Identifies a case already covered by existing tests, or provides no justification |
+
+Multiple choice: Which of the following is an edge case not currently being tested?
+
+A. safe_divide(100, 4)  
+B. safe_divide(7, 0)  
+C. safe_divide(0, 3)  
+D. safe_divide(6, 2)
+
+Answer: B
+
+### Q5: Determine whether a set of tests provides sufficient coverage for the correctness of a function.
+
+~~~python
+def is_palindrome(s):
+  return s == s[::-1]
+~~~
+
+A student submits the following test suite and claims it is sufficient to be confident in the function's correctness:
+
+A. is_palindrome("racecar") -> expected: True  
+B. is_palindrome("hello") -> expected: False
+
+Is this test suite sufficient? Select your answer and explain your reasoning.
+
+1. Yes - the tests cover both True and False outcomes
+2. No - the suite is missing edge cases that could reveal unexpected behavior
+3. Yes - the function is simple enough that two tests are always enough
+4. No - the tests are redundant and cover the same branch
+
+Grading logic:
+- Option 1 is the most common wrong answer (students conflate output coverage with behavioral coverage)
+- Option 2 is correct (missing edge cases include empty string "", single character "a", mixed case "Racecar", spaces "race car", and numeric strings)
+- Option 3 is incorrect (function simplicity does not determine how many tests are sufficient)
+- Option 4 is incorrect (the two tests are not redundant; they cover different outcomes)
 
 # Gameplay Objectives
 
-- *Primary Objective #1*:
-  - Description: *Description*
-  - Alignment: *Describe how this aligns with one or more learning objectives*
-- *Primary Objective #2*:
-  - Description: *Description*
-  - Alignment: *Describe how this aligns with one or more learning objectives*
-- *etc.*
-
-- *Primary Objective #1*:
-  - Description: Select meaningful test-case evidence from a larger pool.
-  - Alignment: Evaluate the quality of selected test cases as evidence.
-- *Primary Objective #2*:
-  - Description: Build confidence-based verdicts about function behavior.
-  - Alignment: Recognize when test coverage is insufficient for a strong verdict.
-- *Primary Objective #3*:
-  - Description: Improve reasoning about test quality, coverage, and edge cases.
-  - Alignment: Reason about edge cases when assessing function behavior.
+- Present strong evidence: select the most informative unit tests to demonstrate program behavior.
+- Identify bugs: use test cases to determine whether the function behaves correctly.
+- Deliver the correct verdict: decide whether the function is guilty of incorrect behavior.
+- Progress through cases: successfully evaluate several cases to advance through the game.
 
 # Procedures/Actions
 
-*Describe the control scheme and what actions a user can take in the game.*
+Players interact with the game using simple mouse or touch inputs.
 
-Players select a limited number of test cases from a larger pool to evaluate each function.
+Actions include:
+- Clicking on evidence cards to select unit tests
+- Reviewing code and the function’s intended behavior
+- Selecting a limited number of tests to present as courtroom evidence
+- Declaring a verdict (Guilty or Not Guilty)
+- Reviewing the judge’s explanation of the case outcome
 
 # Rules
 
-*What resources are available to the player that they make use of?  How does this affect gameplay? How are these resources finite?*
+Players can not submit all test case options from the evidence pool 
+- Players must determine which tests are worth inclusion 
+- Evidence slots are finite
 
-- Players cannot submit every test case.
-- Each selected test case acts as evidence for the function on trial.
-- Verdict strength depends on the quality of chosen evidence.
+Verdicts are guilty/not guilty
+- A guilty verdict is a failure, discouraging guessing 
+
+Time is a finite resource
+- Players must present their case within a time frame 
 
 # Objects/Entities
-*What other things are in the world that you need to design? These may or may not directly translate to actual objects and classes.*
-- Small program functions.
-- A pool of available test cases.
-- Selected test cases as evidence.
-- Confidence-based verdicts.
-- Jury of decision makers
+
+- Judge Compiler: the judge who evaluates the evidence and delivers the verdict explanation
+- The Jury: represented by different programming languages observing the trial.
+- The Defendant: the function being tested in the current case
+- Evidence cards: unit tests that can be presented as evidence
+- Case files: descriptions of the function’s intended behavior
+- Verdict panel: where the player declares the final judgement
 
 ## Core Gameplay Mechanics (Detailed)
 
-- *Core Gameplay Mechanic #1*: *Describe in 2 paragraphs or less, along with how it generally works*
-- *Core Gameplay Mechanic #2*: *Describe in 2 paragraphs or less, along with how it generally works*
-- *Core Gameplay Mechanic #3*: *Describe in 2 paragraphs or less, along with how it generally works*
+Core Game Loop: **The Case**
+- **Introduction**: The court room scene is drawn. The defendant function is in the bottom corner, with Judge Compiler and the Semicolon Bailiffs visible watching over the case 
+- **Case file presentation**: The function appears on screen along with a plain language description of its behavior and the evidence cards which show the test input, expected output, and actual output.
+  - the player reads the function and description. 
+  - the player reads the set of unit tests. 
+- **Evidence selection**: The player selects a limited number of tests from the pool to submit as evidence, filling up all available evidence slots
+- **Jury deliberation**: brief time for the jury to deliberate over the evidence: programming language silhouettes talking to each other behind a wall or curtain, building suspense for the verdict 
+- **The Verdict**: Judge Compiler reads the verdict, the function is either guilty or innocent based on the decision made by the jury. A case specific explanation is shown detailing which tests were meaningful, which were redundant, and what edge cases were missed. The verdict will come with a count of how many jurors went with guilty / not guilty, showing how convincing your selected evidence was
+- **Case closed**
+- Player navigates to the next case 
 
-- *Core Gameplay Mechanic #1*: Each function is presented as being "on trial." Players choose only a limited subset of test cases as evidence.
-- *Core Gameplay Mechanic #2*: Confidence in behavior is based on evidence quality, not proof of correctness. Outcomes are confidence-based verdicts rather than binary pass/fail.
-- *Core Gameplay Mechanic #3*: Players learn through identifying strong, weak, misleading, and insufficient evidence.
+The Verdict 
+IF the function is correct or well written:
+- but the evidence was poor: we may get a false imprisonment and the player is penalized (disbarred, ‘fined’, etc)
+- and the evidence is solid: the function is innocent (yay)
 
-    
+IF the function is poorly written and full of bugs or errors:
+- and the evidence is poor: the function may be declared innocent because edge cases or bugs were missed by the tests, this function is then out on the streets to one day reoffend and crash someones server
+- and the evidence is solid: the function is found guilty and put in jail (yay)
+
 ## Feedback
 
-*Explicitly describe what visual/audio/animation indicators there are that give players feedback on their progress towards their gameplay objectives (and ideally the learning objectives).*
+Judge Compiler’s Ruling
+- Verdict: the ground truth about the level, was the function guilty or not guilty 
+- Evidence quality: for each card the player selected, Judge Compiler identifies whether it provided unique coverage, was redundant, or was misleading and explains specifically why
+- Missed evidence: were there unselected meaningful evidence cards?
+Any notable evidence flaws: redundant, missing edge case, misleading test
 
-*Describe what longer-term feedback you detect and give that guides the player in their learning and lets them know how they are doing in regards to the learning objectives.*
+Visual feedback
+- Evidence cards snap into place with a satisfying visual response, confirming the select action 
+- In early levels, the test cases will show their result (pass/fail) but as complexity increases, the player will have to figure this out themselves 
 
-- Verdicts reflect confidence based on selected evidence.
-- Stronger evidence supports stronger confidence in behavior.
-- Misleading or flawed evidence can produce weak or incorrect conclusions.
-- A Jury will decide at the end of the trial whether or not the function is GUILTY, the jury needs a majority to convict and the amount of jurors voting either way will be displayed. (confidence-based verdict)
+Cumulative summary
+- After a ‘day’ of cases have been evaluated, the game is over and the player receives a final cumulative feedback screen, showing how they performed throughout the game 
+- It will show patterns of mistakes, which cases went well/poorly, overall score? 
+- Could show the guilty functions behind bars and not guilty functions at home and happy 
 
 # Story and Gameplay
 
 ## Presentation of Rules
 
-*Briefly describe how the player will learn the gameplay mechanics. Avoid using walls of text, since people will not read them. Think instead of natural ways of teaching mechanics iteratively and slowly.*
+Case 0 (Tutorial):
+
+- Unscored pretrial hearing.
+- The case file appears and the player reads the function and description; when ready, they click "View Evidence."
+- A single evidence card appears and Judge Compiler prompts the player.
+- Two more evidence cards appear, and the evidence limit becomes clear. The player must pick one or the other to add into evidence, while the unselected card is grayed out.
+- The player selects "Closing Arguments," the evidence is laid out, and the jury deliberates.
+- Judge Compiler delivers the verdict, and the player now knows how to play.
+
 
 ## Presentation of Content
 
-*Briefly describe how the player will be taught the core material they are meant to learn. Avoid using walls of text, since people will not read them. Think instead of natural ways of teaching material iteratively and slowly.*
+Each of the first few cases introduces a different way evidence can be flawed:
+
+- Case 1: redundant tests appear in the pool.
+- Case 2: a passing test is misleading.
+- Case 3: a key edge case is missing.
+
+Judge Compiler should explicitly point these out so the player knows what to look for when levels get trickier.
+
 
 ## Story (Brief)
 
-*The Summary or TL;DR version of below*
+You are a young and upcoming software attorney. Build your career and esteem by putting guilty functions behind bars, and clearing the name of the innocent.
 
-Functions are framed as being "on trial," and players present test-case evidence to support confidence-based verdicts.
+Functions are on trial, and players present test-case evidence to evaluate each function.
 
-"ALL RISE FOR THE HONORABLE JUDGE CASE"
+"ALL RISE FOR THE HONORABLE JUDGE COMPILER."
 
-The gavel slams as the clock strikes 8:00 AM. Judge Case has many a trial to attend to and YOU must provide evidence to prove the GUILT or INNOCENCE of the on-trial functions.
-
-## Storyboarding
-
-*Go into as much detail as needs be to visually convey the Dynamics of your game. Be detailed. Create storyboards and freeze frame images that concisely capture important key elements of your game. You are strongly recommended to sketch pictures on paper and embed them here. Be sure make it clear how previously-described mechanics come through in the dynamics.*
+The gavel slams and Judge Compiler adjusts his posture. The honorable judge compiler has many trials to attend to and YOU must provide evidence to prove the GUILT or INNOCENCE of the on-trial functions.
 
 # Assets Needed
 
-## Aethestics
+## Aesthetics
 
-*Give a sense of the aesthetics of your game, the spirit and atmosphere. Use descriptive, evocative words that can help the reader understand the emotional response of your game.*
+The aesthetic should resemble a playful digital courtroom with programming-themed characters. The atmosphere should feel engaging and lighthearted to encourage experimentation and learning.
 
 ## Graphical
 
-- Characters List
-  - *Characters 1*
-  - *Characters 2*
-  - *...*
-- Textures:
-  - *Texture 1*
-  - *Texture 2*
-  - *...*
-- Environment Art/Textures:
-  - *Environment Texture 1*
-  - *Environment Texture 2*
-  - *...*
+- Characters:
+  - Judge Compiler: a cartoonish judge themed around compilers.
+  - Officers: cartoonish semicolon-themed bailiffs.
+  - Jury members represented as programming languages (Python, JavaScript, etc.).
 
+- Interface elements:
+  - Evidence cards representing unit tests.
+  - Code display panel.
+  - Verdict selection buttons.
 
-## Audio
+- Environment:
+  - Stylized courtroom background with programming-themed visuals.
 
+## Audio (TBD)
 
-*Game region/phase/time are ways of designating a particularly important place in the game.*
+- Intro music: https://freesound.org/people/Rootsmessenger/sounds/762073/
+- Mouse clicking sound: https://freesound.org/people/inkedflorist/sounds/710039/
+- Dragging case statements sound: https://freesound.org/people/Garuda1982/sounds/564632/
+- Gavel sound when pressing "guilty" or "not guilty": https://freesound.org/people/TurtleLG/sounds/80448/
+- Code being sent to jail (guilty) sound: TBD
+- Judge explaining verdict sound: https://freesound.org/people/so0rec/sounds/542590/ lol nice
+- End game celebration sound: https://freesound.org/people/imagefilm.berlin/sounds/746442/
+- Code is innocent sound: TBD
 
-- Music List (Ambient sound)
-  - *Game region/phase/time*: *Example 1*, *Example 2*
-  - *Game region/phase/time*: *Example 3*, *Example 4*
-  
-*Game Interactions are things that trigger SFX, like character movement, hitting a spiky enemy, collecting a coin.*
-
-- Sound List (SFX)
-  - *Game Interaction*: *Example 1*, *Example 2*
-  - *Game Interaction*: *Example 3*, *Example 4*
-
-
-# Metadata
-
-* Template created by Austin Cory Bart <acbart@udel.edu>, Mark Sheriff, Alec Markarian, and Benjamin Stanley.
-* Version 0.0.3
