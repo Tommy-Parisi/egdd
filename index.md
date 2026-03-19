@@ -82,7 +82,7 @@ Prior to the game, players need to have a basic understanding of:
 
 A short pre-test and matching post-test should be designed to assess student learning.
 
-### Q1: Given a function and a set of unit tests, identify which tests provide unique behavioral coverage.
+### Q1: Given a function and a set of unit tests added in the order shown, identify which tests provide new behavioral coverage not already covered by a prior test in the list.
 
 (Multiple choice)
 
@@ -93,22 +93,22 @@ def absolute_value(n):
   return n
 ~~~
 
-A. absolute_value(5) -> expected: 5  
-B. absolute_value(-3) -> expected: 3  
-C. absolute_value(10) -> expected: 10  
-D. absolute_value(-7) -> expected: 7  
+A. absolute_value(5) -> expected: 5
+B. absolute_value(-3) -> expected: 3
+C. absolute_value(10) -> expected: 10
+D. absolute_value(-7) -> expected: 7
 E. absolute_value(0) -> expected: 0
 
 Answer: A, B, E
 
 Grading logic:
-- A covers the positive branch (n >= 0, returns n)
-- B covers the negative branch (n < 0, returns -n)
-- E covers the zero edge case (worth testing explicitly)
-- C is redundant with A (same branch, no new information)
-- D is redundant with B (same branch, no new information)
+- A is the first test of the positive branch (n >= 0, returns n) — new coverage
+- B is the first test of the negative branch (n < 0, returns -n) — new coverage
+- C tests the same positive branch already covered by A — no new coverage
+- D tests the same negative branch already covered by B — no new coverage
+- E is the first test of the zero edge case — new coverage
 
-### Q2: Identify the redundant tests that execute the same logical branch in the given function.
+### Q2: The following tests were added to a test suite in the order shown (A through E). Which tests are redundant because they exercise a branch already covered by an earlier test in the list?
 
 (Multiple choice)
 
@@ -124,18 +124,20 @@ def classify_score(score):
     return "F"
 ~~~
 
-A. classify_score(95) -> expected: "A"  
-B. classify_score(85) -> expected: "B"  
-C. classify_score(92) -> expected: "A"  
-D. classify_score(72) -> expected: "C"  
+A. classify_score(95) -> expected: "A"
+B. classify_score(85) -> expected: "B"
+C. classify_score(92) -> expected: "A"
+D. classify_score(72) -> expected: "C"
 E. classify_score(78) -> expected: "C"
 
 Answer: C, E
 
 Grading logic:
-- A and C both enter the score >= 90 branch, so C is redundant with A
-- B covers the score >= 80 branch uniquely
-- D and E both enter the score >= 70 branch, so E is redundant with D
+- A is the first test of the score >= 90 branch — new coverage
+- B is the first test of the score >= 80 branch — new coverage
+- C tests the same score >= 90 branch already covered by A — redundant
+- D is the first test of the score >= 70 branch — new coverage
+- E tests the same score >= 70 branch already covered by D — redundant
 
 ### Q4: Identify an edge case that is not covered by an existing test suite.
 
