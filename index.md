@@ -9,12 +9,12 @@ In Case By Case, players take the role of a software attorney tasked with determ
 ## Influences
 
 The American Judicial System
-  Medium: Trial Recordings, Court TV, "True Crime" Court Case Explanations 
-  Explanation: Case By Case is set in a court room and the regular rules of this domain apply. Trials, juries, evidence, the defence and prosecution
+- Medium: Trial Recordings, Court TV, "True Crime" Court Case Explanations 
+- Explanation: Case By Case is set in a court room and the regular rules of this domain apply. Trials, juries, evidence, the defence and prosecution
 
 Jackbox Games
-  Medium: Game
-  Explanation: The visual style and game flow of Jackbox games inspires my thinking about Case by Case. The player will have to pick between test cases on the screen and we need to make this fun and visually appealing. funky music, cool animations, and a fun court house design inspired by Jackbox.TV.
+- Medium: Game
+- Explanation: The visual style and game flow of Jackbox games inspires my thinking about Case by Case. The player will have to pick between test cases on the screen and we need to make this fun and visually appealing. funky music, cool animations, and a fun court house design inspired by Jackbox.TV.
 
 
 ## Core Gameplay Mechanics
@@ -51,6 +51,7 @@ Logic
 ## Target Audiences
 
 * Novice programmers with some programming knowledge
+* Novice programmers that have a basic understanding of Python
 * Students who are in introductory programming or software engineering courses
 * Students who are beginning to understand how to write and evaluate unit tests 
 
@@ -336,14 +337,13 @@ The aesthetic should resemble a playful digital courtroom with programming-theme
 
 ## Audio 
 
-- Intro music: https://freesound.org/people/Rootsmessenger/sounds/762073/
+- Intro music: https://freesound.org/people/Rootsmessenger/sounds/762073/ 
 - Mouse clicking sound: https://freesound.org/people/inkedflorist/sounds/710039/
 - Dragging case statements sound: https://freesound.org/people/Garuda1982/sounds/564632/
-- Gavel sound when pressing "guilty" or "not guilty": https://freesound.org/people/TurtleLG/sounds/80448/
-- Code being sent to jail (guilty) sound: TBD
-- Judge explaining verdict sound: https://freesound.org/people/so0rec/sounds/542590/ lol nice
-- End game celebration sound: https://freesound.org/people/imagefilm.berlin/sounds/746442/
-- Code is innocent sound: TBD
+- Gavel sound when pressing ‘guilty’ or ‘not guilty’ button: https://freesound.org/people/TurtleLG/sounds/80448/
+- Code being sent to jail (guilty) sound: https://freesound.org/people/jacobmathiassen/sounds/254869/ 
+- Judge explaining verdict sound: https://freesound.org/people/so0rec/sounds/542590/ 
+- End game celebration sound: https://freesound.org/people/imagefilm.berlin/sounds/746442/ 
 
 ## Storyboarding
 
