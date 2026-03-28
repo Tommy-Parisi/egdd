@@ -71,7 +71,7 @@ Logic
 ## Prerequisite Knowledge 
 
 Prior to the game, players need to have a basic understanding of:
--  programming concepts such as variables, functions, return values, conditional statements and loops.
+- programming concepts such as variables, functions, return values, conditional statements and loops.
 - basic programming syntax 
 - ability to read and trace through a short function and predict its output
 - familiarity with at least 1 programming language at a beginner level
@@ -94,11 +94,11 @@ def absolute_value(n):
   return n
 ~~~
 
-A. absolute_value(5) -> expected: 5
-B. absolute_value(-3) -> expected: 3
-C. absolute_value(10) -> expected: 10
-D. absolute_value(-7) -> expected: 7
-E. absolute_value(0) -> expected: 0
+- A. absolute_value(5) -> expected: 5
+- B. absolute_value(-3) -> expected: 3
+- C. absolute_value(10) -> expected: 10
+- D. absolute_value(-7) -> expected: 7
+- E. absolute_value(0) -> expected: 0
 
 Answer: A, B, E
 
@@ -152,9 +152,9 @@ def safe_divide(a, b):
 
 The following tests exist for this function:
 
-A. safe_divide(10, 2) -> expected: 5.0  
-B. safe_divide(9, 3) -> expected: 3.0  
-C. safe_divide(0, 5) -> expected: 0.0
+- A. safe_divide(10, 2) -> expected: 5.0  
+- B. safe_divide(9, 3) -> expected: 3.0  
+- C. safe_divide(0, 5) -> expected: 0.0
 
 Free response: Describe one edge case that is not covered by the existing tests. Explain why it is worth testing.
 
@@ -168,10 +168,10 @@ Rubric:
 
 Multiple choice: Which of the following is an edge case not currently being tested?
 
-A. safe_divide(100, 4)  
-B. safe_divide(7, 0)  
-C. safe_divide(0, 3)  
-D. safe_divide(6, 2)
+- A. safe_divide(100, 4)  
+- B. safe_divide(7, 0)  
+- C. safe_divide(0, 3)  
+- D. safe_divide(6, 2)
 
 Answer: B
 
@@ -184,8 +184,8 @@ def is_palindrome(s):
 
 A student submits the following test suite and claims it is sufficient to be confident in the function's correctness:
 
-A. is_palindrome("racecar") -> expected: True  
-B. is_palindrome("hello") -> expected: False
+- A. is_palindrome("racecar") -> expected: True  
+- B. is_palindrome("hello") -> expected: False
 
 Is this test suite sufficient? Select your answer and explain your reasoning.
 
