@@ -109,7 +109,7 @@ Grading logic:
 - D tests the same negative branch already covered by B — no new coverage
 - E is the first test of the zero edge case — new coverage
 
-### Q2: The following tests were added to a test suite in the order shown (A through E). Which tests are redundant because they exercise a branch already covered by an earlier test in the list?
+### Q2: Identify all pairs of tests that are redundant (i.e., they execute the same logical branch and provide no additional coverage).
 
 (Multiple choice)
 
@@ -131,16 +131,15 @@ C. classify_score(92) -> expected: "A"
 D. classify_score(72) -> expected: "C"
 E. classify_score(78) -> expected: "C"
 
-Answer: C, E
+Answer: A, C, D, E
 
 Grading logic:
-- A is the first test of the score >= 90 branch — new coverage
-- B is the first test of the score >= 80 branch — new coverage
-- C tests the same score >= 90 branch already covered by A — redundant
-- D is the first test of the score >= 70 branch — new coverage
-- E tests the same score >= 70 branch already covered by D — redundant
+- A and C both enter the score >= 90 branch → therefore, A and C are redundant with each other.
+- D and E both enter the score >= 70 branch → therefore, D and E are redundant with each other.
+- B is not redundant; it uniquely covers the score >= 80 branch.
 
-### Q4: Identify an edge case that is not covered by an existing test suite.
+
+### Q3: Identify an edge case that is not covered by an existing test suite.
 
 (Multiple choice / free response)
 
@@ -176,7 +175,7 @@ D. safe_divide(6, 2)
 
 Answer: B
 
-### Q5: Determine whether a set of tests provides sufficient coverage for the correctness of a function.
+### Q4: Determine whether a set of tests provides sufficient coverage for the correctness of a function.
 
 ~~~python
 def is_palindrome(s):
