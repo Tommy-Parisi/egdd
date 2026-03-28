@@ -125,11 +125,11 @@ def classify_score(score):
     return "F"
 ~~~
 
-A. classify_score(95) -> expected: "A"
-B. classify_score(85) -> expected: "B"
-C. classify_score(92) -> expected: "A"
-D. classify_score(72) -> expected: "C"
-E. classify_score(78) -> expected: "C"
+- A. classify_score(95) -> expected: "A"
+- B. classify_score(85) -> expected: "B"
+- C. classify_score(92) -> expected: "A"
+- D. classify_score(72) -> expected: "C"
+- E. classify_score(78) -> expected: "C"
 
 Answer: A, C, D, E
 
